@@ -1,0 +1,135 @@
+#home{
+  background-image: url(../img/bg-home.jpg); /* es la imagen de portada*/
+  background-position: center;
+  background-repeat: no-repeat; /* no repetira la imagen de fonfo*/
+  background-size:cover;/* cover para cubrir todo el contenedor*/
+  height: 554px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#home .container{
+  color: white; /* blanco para el text*/
+  padding: 70px;
+}
+
+.text-home{
+  font-size: 53px; /* tamaño de letra*/
+}
+.btn-home{
+  background: #2ECC71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: uppercase; /* text a mayuscula*/
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 14px;
+}
+/* para la pagina de servicio completa*/
+#services{
+  background-color: #A9BCF5;
+  text-align: center;
+  color: #fff;
+  padding:  90px 7px;
+}
+/* para las cajas de imagen*/
+.box-services{
+  display: inline-block;
+  width: 30%;
+  margin-top: 63px;
+}
+/*para el txto*/
+.text-services{
+  font-size: 35px;/*tamaño de letra*/
+  letter-spacing: 2px /* para espaccio entre cada letra*/
+}
+#work{
+  text-align: center;
+  color: black;
+  padding: 90px 7px;
+}
+.image{
+  padding-top: 50px;
+}
+.grid{
+  display: inline-block;
+}
+
+.img-box{
+width: 300px;
+border-radius: 50px;
+
+}
+.img-box:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+/*MODAL*/
+
+#my-modal{
+ background: rgba(117, 152, 169, 0.7);
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: none;
+ transition: 0.4s;
+ position: fixed;
+}
+
+#cerrar{
+  position: absolute;
+  color: #A9BCF5;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 490px;
+}
+#contenedor-img {
+  box-sizing: border-box;
+  border: 8px white dashed;
+  border-radius: 40px;
+  width: 600px;
+  height: 550px;
+  margin: auto;
+  margin-top: 40px;
+  /*animacion de la imgen*/
+  /*animation-name: bote;
+  animation-duration:  2s;*/
+  animation-name:agrandar;
+  animation-duration: 0.7s;
+
+
+}
+/*animacion de la imgen*/
+/*
+@keyframes bote {
+    5%, 30%, 60%{
+    transform: translateY(0);
+  }
+
+ 20%{
+    transform: translateY(-40px);
+  }
+
+  55%{
+    transform: translateY(-20px);
+  }
+  */
+@keyframes agrandar {
+    from {
+      transform:scale(0)
+    }
+    to {
+      transform:scale(1);
+    }
+}
+#contenedor-img img{
+  border-radius: 40px;
+  width:100%;
+  height:100%;
+}
